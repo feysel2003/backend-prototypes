@@ -1,0 +1,62 @@
+name: Professional Daily Activity
+
+on:
+  schedule:
+    # Runs 4 times a day:
+    # 09:00 (Start of day), 13:00 (Lunch), 16:00 (Afternoon), 21:00 (Late night) - UTC times
+    - cron: '0 9,13,16,21 * * *'
+  workflow_dispatch: # Allows you to click "Run" manually if you want extra
+
+permissions:
+  contents: write
+
+jobs:
+  simulate_work:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+
+      - name: Work Simulation
+        run: |
+          # 1. Determine how many commits to do THIS session (Random 2 to 4)
+          # We run 4 times a day. 4 runs * 2 commits = 8 minimum.
+          BATCH_SIZE=$(( ( RANDOM % 3 ) + 2 ))
+          
+          echo "Simulating $BATCH_SIZE commits for this session..."
+          
+          # Array of professional-sounding messages
+          MESSAGES=(
+            "fix: minor typo in documentation" 
+            "refactor: clean up variable names" 
+            "chore: update cache dependencies" 
+            "style: adjust padding in layout" 
+            "perf: optimize loop performance" 
+            "test: update unit test coverage" 
+            "fix: resolve potential null pointer"
+            "chore: linting updates"
+          )
+          
+          # 2. Loop to create commits
+          for ((i=1; i<=BATCH_SIZE; i++))
+          do
+            # Update the file content slightly
+            echo "Work log entry: $(date +'%Y-%m-%d %H:%M:%S.%N') - Session ID: $RANDOM" >> dev_cache.log
+            
+            # Stage file
+            git add dev_cache.log
+            
+            # Pick a random message from the list above
+            RAND_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+            
+            # Commit
+            git commit -m "$RAND_MSG"
+          done
+
+      - name: Push Changes
+        run: git push
