@@ -1,11 +1,13 @@
-name: Professional Daily Activity
+name: Professional Activity Sim
 
 on:
   schedule:
-    # Runs 4 times a day:
-    # 09:00 (Start of day), 13:00 (Lunch), 16:00 (Afternoon), 21:00 (Late night) - UTC times
-    - cron: '0 9,13,16,21 * * *'
-  workflow_dispatch: # Allows you to click "Run" manually if you want extra
+    # RUN TIMES (UTC):
+    # 06:00 UTC = 09:00 AM Ethiopia
+    # 10:00 UTC = 01:00 PM Ethiopia
+    # 14:00 UTC = 05:00 PM Ethiopia
+    - cron: '0 6,10,14 * * *'
+  workflow_dispatch: # Allows manual run button
 
 permissions:
   contents: write
@@ -14,48 +16,92 @@ jobs:
   simulate_work:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Configure Git
+      # TRICK 1: Human Delay
+      # Bots start exactly at 09:00:00. Humans start at 09:04 or 09:12.
+      # This waits 1 to 45 minutes before starting.
+      - name: Humanize Start Time
+        run: |
+          SLEEP_SECONDS=$(( ( RANDOM % 2700 ) + 1 ))
+          echo "Mimicking human delay: Waiting $SLEEP_SECONDS seconds..."
+          sleep $SLEEP_SECONDS
+
+      # TRICK 2: Weekend & Sick Day Logic
+      - name: Check Calendar
+        run: |
+          # Get Day of Week (1=Mon, 7=Sun)
+          DAY=$(date +%u)
+          
+          # If Sunday, stop immediately (Rest Day)
+          if [ "$DAY" -eq 7 ]; then
+            echo "It is Sunday. Taking a break."
+            exit 0
+          fi
+          
+          # 10% Chance to skip a random weekday (Sick/Busy Day)
+          if [ $(( RANDOM % 10 )) -eq 0 ]; then
+            echo "Randomly skipping today to look authentic."
+            exit 0
+          fi
+
+      - name: Configure Git Identity
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "actions@github.com"
 
-      - name: Work Simulation
+      # TRICK 3: Realistic Code & Variable Commit Volume
+      - name: Write Code
         run: |
-          # 1. Determine how many commits to do THIS session (Random 2 to 4)
-          # We run 4 times a day. 4 runs * 2 commits = 8 minimum.
-          BATCH_SIZE=$(( ( RANDOM % 3 ) + 2 ))
+          # Determine commit count for this session (3 to 6 commits)
+          # 3 sessions/day * ~4 commits = ~12 commits total per day
+          BATCH_SIZE=$(( ( RANDOM % 4 ) + 3 ))
           
-          echo "Simulating $BATCH_SIZE commits for this session..."
+          echo "Simulating $BATCH_SIZE coding tasks..."
           
-          # Array of professional-sounding messages
-          MESSAGES=(
-            "fix: minor typo in documentation" 
-            "refactor: clean up variable names" 
-            "chore: update cache dependencies" 
-            "style: adjust padding in layout" 
-            "perf: optimize loop performance" 
-            "test: update unit test coverage" 
-            "fix: resolve potential null pointer"
-            "chore: linting updates"
+          # Realistic file structure
+          FILES=("src/auth.js" "src/utils.py" "assets/styles.css" "config/server.json" "tests/api.test.js")
+          
+          # Code snippets to make diffs look real
+          SNIPPETS=(
+            "const token = generateAuthToken();"
+            "def validate_input(data): return True"
+            ".header { background-color: #333; }"
+            "{ \"timeout\": 5000, \"retry\": true }"
+            "expect(response.status).toBe(200);"
+            "// TODO: Refactor loop for performance"
+            "console.log('Server started on port 8080');"
+            "import os # System compatibility check"
           )
           
-          # 2. Loop to create commits
+          # Professional Commit Messages
+          MESSAGES=(
+            "fix: handle potential null pointer exception"
+            "feat: update authentication middleware"
+            "style: adjust padding for mobile view"
+            "refactor: optimize database query"
+            "chore: update dev dependencies"
+            "test: add unit test for login"
+            "perf: reduce bundle size"
+          )
+          
+          # Create folders
+          mkdir -p src assets config tests
+          
+          # Loop to create commits
           for ((i=1; i<=BATCH_SIZE; i++))
           do
-            # Update the file content slightly
-            echo "Work log entry: $(date +'%Y-%m-%d %H:%M:%S.%N') - Session ID: $RANDOM" >> dev_cache.log
+            FILE=${FILES[$RANDOM % ${#FILES[@]}]}
+            SNIPPET=${SNIPPETS[$RANDOM % ${#SNIPPETS[@]}]}
+            MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
             
-            # Stage file
-            git add dev_cache.log
+            # Append code snippet
+            echo "$SNIPPET" >> $FILE
             
-            # Pick a random message from the list above
-            RAND_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
-            
-            # Commit
-            git commit -m "$RAND_MSG"
+            # Git operations
+            git add $FILE
+            git commit -m "$MSG"
           done
 
       - name: Push Changes
