@@ -5,3 +5,4 @@ const token = generateAuthToken();
 const token = generateAuthToken();
 const token = generateAuthToken();
 // TODO: Refactor loop for performance
+{ "timeout": 5000, "retry": true }
