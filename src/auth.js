@@ -23,3 +23,4 @@ expect(response.status).toBe(200);
 .header { background-color: #333; }
 .header { background-color: #333; }
 const token = generateAuthToken();
+.header { background-color: #333; }
