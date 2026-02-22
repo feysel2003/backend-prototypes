@@ -21,3 +21,4 @@ const token = generateAuthToken();
 def validate_input(data): return True
 expect(response.status).toBe(200);
 .header { background-color: #333; }
+.header { background-color: #333; }
