@@ -18,3 +18,4 @@ expect(response.status).toBe(200);
 def validate_input(data): return True
 const token = generateAuthToken();
 // TODO: Refactor loop for performance
+def validate_input(data): return True
