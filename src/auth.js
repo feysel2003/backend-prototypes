@@ -29,3 +29,4 @@ import os # System compatibility check
 const token = generateAuthToken();
 import os # System compatibility check
 const token = generateAuthToken();
+.header { background-color: #333; }
