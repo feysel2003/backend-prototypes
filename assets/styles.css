@@ -28,3 +28,4 @@ const token = generateAuthToken();
 def validate_input(data): return True
 // TODO: Refactor loop for performance
 // TODO: Refactor loop for performance
+expect(response.status).toBe(200);
