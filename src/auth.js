@@ -49,3 +49,4 @@ import os # System compatibility check
 import os # System compatibility check
 const token = generateAuthToken();
 expect(response.status).toBe(200);
+.header { background-color: #333; }
