@@ -47,3 +47,4 @@ import os # System compatibility check
 // TODO: Refactor loop for performance
 def validate_input(data): return True
 // TODO: Refactor loop for performance
+{ "timeout": 5000, "retry": true }
