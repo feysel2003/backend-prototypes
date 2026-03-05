@@ -56,3 +56,4 @@ import os # System compatibility check
 { "timeout": 5000, "retry": true }
 { "timeout": 5000, "retry": true }
 import os # System compatibility check
+def validate_input(data): return True
