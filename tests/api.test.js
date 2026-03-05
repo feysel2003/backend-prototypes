@@ -51,3 +51,4 @@ def validate_input(data): return True
 const token = generateAuthToken();
 expect(response.status).toBe(200);
 { "timeout": 5000, "retry": true }
+def validate_input(data): return True
