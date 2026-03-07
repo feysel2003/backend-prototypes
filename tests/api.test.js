@@ -61,3 +61,4 @@ import os # System compatibility check
 def validate_input(data): return True
 expect(response.status).toBe(200);
 .header { background-color: #333; }
+{ "timeout": 5000, "retry": true }
