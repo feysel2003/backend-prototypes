@@ -66,3 +66,4 @@ const token = generateAuthToken();
 // TODO: Refactor loop for performance
 import os # System compatibility check
 const token = generateAuthToken();
+console.log('Server started on port 8080');
