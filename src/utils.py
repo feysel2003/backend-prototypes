@@ -50,3 +50,4 @@ expect(response.status).toBe(200);
 expect(response.status).toBe(200);
 { "timeout": 5000, "retry": true }
 import os # System compatibility check
+def validate_input(data): return True
