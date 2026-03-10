@@ -64,3 +64,4 @@ def validate_input(data): return True
 // TODO: Refactor loop for performance
 { "timeout": 5000, "retry": true }
 // TODO: Refactor loop for performance
+console.log('Server started on port 8080');
