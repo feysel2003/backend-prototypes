@@ -68,3 +68,4 @@ const token = generateAuthToken();
 // TODO: Refactor loop for performance
 // TODO: Refactor loop for performance
 .header { background-color: #333; }
+import os # System compatibility check
