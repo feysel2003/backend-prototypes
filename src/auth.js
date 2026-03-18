@@ -90,3 +90,4 @@ def validate_input(data): return True
 console.log('Server started on port 8080');
 console.log('Server started on port 8080');
 .header { background-color: #333; }
+// TODO: Refactor loop for performance
