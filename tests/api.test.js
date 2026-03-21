@@ -104,3 +104,4 @@ import os # System compatibility check
 // TODO: Refactor loop for performance
 // TODO: Refactor loop for performance
 def validate_input(data): return True
+.header { background-color: #333; }
