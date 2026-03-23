@@ -87,3 +87,4 @@ import os # System compatibility check
 { "timeout": 5000, "retry": true }
 import os # System compatibility check
 .header { background-color: #333; }
+def validate_input(data): return True
