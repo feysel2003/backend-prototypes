@@ -91,3 +91,4 @@ def validate_input(data): return True
 const token = generateAuthToken();
 // TODO: Refactor loop for performance
 { "timeout": 5000, "retry": true }
+def validate_input(data): return True
