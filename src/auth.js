@@ -110,3 +110,4 @@ def validate_input(data): return True
 const token = generateAuthToken();
 const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
+.header { background-color: #333; }
