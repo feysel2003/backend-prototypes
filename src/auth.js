@@ -112,3 +112,4 @@ const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 .header { background-color: #333; }
 const token = generateAuthToken();
+// TODO: Refactor loop for performance
