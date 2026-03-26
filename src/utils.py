@@ -94,3 +94,4 @@ const token = generateAuthToken();
 def validate_input(data): return True
 .header { background-color: #333; }
 // TODO: Refactor loop for performance
+def validate_input(data): return True
