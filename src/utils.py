@@ -98,3 +98,4 @@ def validate_input(data): return True
 console.log('Server started on port 8080');
 const token = generateAuthToken();
 expect(response.status).toBe(200);
+import os # System compatibility check
