@@ -124,3 +124,4 @@ import os # System compatibility check
 const token = generateAuthToken();
 def validate_input(data): return True
 def validate_input(data): return True
+{ "timeout": 5000, "retry": true }
