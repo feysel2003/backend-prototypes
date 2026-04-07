@@ -144,3 +144,4 @@ expect(response.status).toBe(200);
 // TODO: Refactor loop for performance
 import os # System compatibility check
 .header { background-color: #333; }
+{ "timeout": 5000, "retry": true }
