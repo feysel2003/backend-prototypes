@@ -150,3 +150,4 @@ def validate_input(data): return True
 { "timeout": 5000, "retry": true }
 .header { background-color: #333; }
 { "timeout": 5000, "retry": true }
+console.log('Server started on port 8080');
