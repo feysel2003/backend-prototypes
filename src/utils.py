@@ -120,3 +120,4 @@ const token = generateAuthToken();
 .header { background-color: #333; }
 // TODO: Refactor loop for performance
 expect(response.status).toBe(200);
+.header { background-color: #333; }
