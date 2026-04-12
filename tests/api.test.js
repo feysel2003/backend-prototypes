@@ -158,3 +158,4 @@ import os # System compatibility check
 .header { background-color: #333; }
 const token = generateAuthToken();
 .header { background-color: #333; }
+expect(response.status).toBe(200);
