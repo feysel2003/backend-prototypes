@@ -158,3 +158,4 @@ import os # System compatibility check
 const token = generateAuthToken();
 // TODO: Refactor loop for performance
 import os # System compatibility check
+console.log('Server started on port 8080');
