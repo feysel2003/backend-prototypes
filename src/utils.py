@@ -138,3 +138,4 @@ import os # System compatibility check
 const token = generateAuthToken();
 expect(response.status).toBe(200);
 const token = generateAuthToken();
+console.log('Server started on port 8080');
