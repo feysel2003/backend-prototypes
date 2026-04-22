@@ -151,3 +151,4 @@ def validate_input(data): return True
 def validate_input(data): return True
 const token = generateAuthToken();
 console.log('Server started on port 8080');
+const token = generateAuthToken();
