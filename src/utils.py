@@ -158,3 +158,4 @@ def validate_input(data): return True
 // TODO: Refactor loop for performance
 expect(response.status).toBe(200);
 // TODO: Refactor loop for performance
+import os # System compatibility check
