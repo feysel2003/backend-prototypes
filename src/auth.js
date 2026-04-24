@@ -201,3 +201,4 @@ console.log('Server started on port 8080');
 def validate_input(data): return True
 // TODO: Refactor loop for performance
 expect(response.status).toBe(200);
+import os # System compatibility check
