@@ -160,3 +160,4 @@ expect(response.status).toBe(200);
 // TODO: Refactor loop for performance
 import os # System compatibility check
 .header { background-color: #333; }
+console.log('Server started on port 8080');
