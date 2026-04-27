@@ -165,3 +165,4 @@ import os # System compatibility check
 console.log('Server started on port 8080');
 expect(response.status).toBe(200);
 const token = generateAuthToken();
+{ "timeout": 5000, "retry": true }
