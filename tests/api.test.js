@@ -214,3 +214,4 @@ expect(response.status).toBe(200);
 import os # System compatibility check
 { "timeout": 5000, "retry": true }
 import os # System compatibility check
+const token = generateAuthToken();
