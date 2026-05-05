@@ -180,3 +180,4 @@ expect(response.status).toBe(200);
 { "timeout": 5000, "retry": true }
 import os # System compatibility check
 console.log('Server started on port 8080');
+console.log('Server started on port 8080');
