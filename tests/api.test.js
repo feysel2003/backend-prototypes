@@ -223,3 +223,4 @@ import os # System compatibility check
 .header { background-color: #333; }
 def validate_input(data): return True
 def validate_input(data): return True
+{ "timeout": 5000, "retry": true }
