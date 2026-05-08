@@ -191,3 +191,4 @@ import os # System compatibility check
 import os # System compatibility check
 def validate_input(data): return True
 expect(response.status).toBe(200);
+const token = generateAuthToken();
