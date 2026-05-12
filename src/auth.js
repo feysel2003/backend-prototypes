@@ -241,3 +241,4 @@ const token = generateAuthToken();
 console.log('Server started on port 8080');
 expect(response.status).toBe(200);
 { "timeout": 5000, "retry": true }
+expect(response.status).toBe(200);
