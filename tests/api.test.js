@@ -234,3 +234,4 @@ const token = generateAuthToken();
 expect(response.status).toBe(200);
 expect(response.status).toBe(200);
 { "timeout": 5000, "retry": true }
+// TODO: Refactor loop for performance
