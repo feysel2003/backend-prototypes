@@ -232,3 +232,4 @@ const token = generateAuthToken();
 const token = generateAuthToken();
 .header { background-color: #333; }
 expect(response.status).toBe(200);
+expect(response.status).toBe(200);
