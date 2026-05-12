@@ -201,3 +201,4 @@ const token = generateAuthToken();
 .header { background-color: #333; }
 def validate_input(data): return True
 const token = generateAuthToken();
+console.log('Server started on port 8080');
