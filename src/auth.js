@@ -246,3 +246,4 @@ expect(response.status).toBe(200);
 expect(response.status).toBe(200);
 // TODO: Refactor loop for performance
 def validate_input(data): return True
+console.log('Server started on port 8080');
