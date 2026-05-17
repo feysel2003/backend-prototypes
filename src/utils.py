@@ -212,3 +212,4 @@ const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
+console.log('Server started on port 8080');
