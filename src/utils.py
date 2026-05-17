@@ -213,3 +213,4 @@ const token = generateAuthToken();
 const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 console.log('Server started on port 8080');
+def validate_input(data): return True
