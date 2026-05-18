@@ -218,3 +218,4 @@ const token = generateAuthToken();
 // TODO: Refactor loop for performance
 // TODO: Refactor loop for performance
 { "timeout": 5000, "retry": true }
+// TODO: Refactor loop for performance
