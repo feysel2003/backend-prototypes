@@ -249,3 +249,4 @@ def validate_input(data): return True
 def validate_input(data): return True
 const token = generateAuthToken();
 expect(response.status).toBe(200);
+import os # System compatibility check
