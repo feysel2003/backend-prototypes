@@ -261,3 +261,4 @@ console.log('Server started on port 8080');
 // TODO: Refactor loop for performance
 // TODO: Refactor loop for performance
 const token = generateAuthToken();
+console.log('Server started on port 8080');
