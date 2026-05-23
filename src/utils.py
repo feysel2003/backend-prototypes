@@ -227,3 +227,4 @@ const token = generateAuthToken();
 // TODO: Refactor loop for performance
 // TODO: Refactor loop for performance
 def validate_input(data): return True
+{ "timeout": 5000, "retry": true }
