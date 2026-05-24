@@ -229,3 +229,4 @@ const token = generateAuthToken();
 def validate_input(data): return True
 { "timeout": 5000, "retry": true }
 .header { background-color: #333; }
+expect(response.status).toBe(200);
