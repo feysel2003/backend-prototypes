@@ -261,3 +261,4 @@ import os # System compatibility check
 const token = generateAuthToken();
 .header { background-color: #333; }
 import os # System compatibility check
+console.log('Server started on port 8080');
