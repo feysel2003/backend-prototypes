@@ -267,3 +267,4 @@ def validate_input(data): return True
 expect(response.status).toBe(200);
 // TODO: Refactor loop for performance
 def validate_input(data): return True
+expect(response.status).toBe(200);
