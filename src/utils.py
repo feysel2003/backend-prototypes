@@ -241,3 +241,4 @@ console.log('Server started on port 8080');
 console.log('Server started on port 8080');
 const token = generateAuthToken();
 import os # System compatibility check
+expect(response.status).toBe(200);
