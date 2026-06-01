@@ -244,3 +244,4 @@ import os # System compatibility check
 expect(response.status).toBe(200);
 def validate_input(data): return True
 const token = generateAuthToken();
+def validate_input(data): return True
