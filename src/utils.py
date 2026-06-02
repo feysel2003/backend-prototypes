@@ -248,3 +248,4 @@ def validate_input(data): return True
 { "timeout": 5000, "retry": true }
 const token = generateAuthToken();
 const token = generateAuthToken();
+def validate_input(data): return True
