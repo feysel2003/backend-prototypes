@@ -289,3 +289,4 @@ console.log('Server started on port 8080');
 import os # System compatibility check
 import os # System compatibility check
 // TODO: Refactor loop for performance
+expect(response.status).toBe(200);
