@@ -306,3 +306,4 @@ const token = generateAuthToken();
 def validate_input(data): return True
 expect(response.status).toBe(200);
 // TODO: Refactor loop for performance
+{ "timeout": 5000, "retry": true }
