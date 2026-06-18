@@ -317,3 +317,4 @@ import os # System compatibility check
 .header { background-color: #333; }
 .header { background-color: #333; }
 expect(response.status).toBe(200);
+.header { background-color: #333; }
