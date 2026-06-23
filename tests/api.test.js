@@ -322,3 +322,4 @@ expect(response.status).toBe(200);
 def validate_input(data): return True
 .header { background-color: #333; }
 def validate_input(data): return True
+expect(response.status).toBe(200);
