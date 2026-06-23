@@ -286,3 +286,4 @@ expect(response.status).toBe(200);
 expect(response.status).toBe(200);
 expect(response.status).toBe(200);
 const token = generateAuthToken();
+// TODO: Refactor loop for performance
