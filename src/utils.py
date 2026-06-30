@@ -308,3 +308,4 @@ const token = generateAuthToken();
 def validate_input(data): return True
 expect(response.status).toBe(200);
 console.log('Server started on port 8080');
+def validate_input(data): return True
