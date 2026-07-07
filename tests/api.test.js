@@ -367,3 +367,4 @@ console.log('Server started on port 8080');
 // TODO: Refactor loop for performance
 const token = generateAuthToken();
 .header { background-color: #333; }
+{ "timeout": 5000, "retry": true }
