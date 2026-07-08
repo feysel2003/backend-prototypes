@@ -370,3 +370,4 @@ const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 def validate_input(data): return True
 def validate_input(data): return True
+expect(response.status).toBe(200);
