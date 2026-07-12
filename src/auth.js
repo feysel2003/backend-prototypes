@@ -377,3 +377,4 @@ import os # System compatibility check
 const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 import os # System compatibility check
+expect(response.status).toBe(200);
