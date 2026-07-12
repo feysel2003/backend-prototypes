@@ -339,3 +339,4 @@ import os # System compatibility check
 def validate_input(data): return True
 .header { background-color: #333; }
 { "timeout": 5000, "retry": true }
+import os # System compatibility check
