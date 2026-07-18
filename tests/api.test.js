@@ -400,3 +400,4 @@ def validate_input(data): return True
 def validate_input(data): return True
 // TODO: Refactor loop for performance
 import os # System compatibility check
+console.log('Server started on port 8080');
