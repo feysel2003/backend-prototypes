@@ -409,3 +409,4 @@ const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 const token = generateAuthToken();
 import os # System compatibility check
+{ "timeout": 5000, "retry": true }
