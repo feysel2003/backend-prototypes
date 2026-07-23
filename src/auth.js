@@ -410,3 +410,4 @@ console.log('Server started on port 8080');
 import os # System compatibility check
 const token = generateAuthToken();
 expect(response.status).toBe(200);
+// TODO: Refactor loop for performance
