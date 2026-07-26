@@ -420,3 +420,4 @@ def validate_input(data): return True
 expect(response.status).toBe(200);
 def validate_input(data): return True
 // TODO: Refactor loop for performance
+{ "timeout": 5000, "retry": true }
