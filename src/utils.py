@@ -371,3 +371,4 @@ const token = generateAuthToken();
 const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 { "timeout": 5000, "retry": true }
+expect(response.status).toBe(200);
