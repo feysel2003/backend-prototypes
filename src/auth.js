@@ -427,3 +427,4 @@ expect(response.status).toBe(200);
 def validate_input(data): return True
 .header { background-color: #333; }
 // TODO: Refactor loop for performance
+{ "timeout": 5000, "retry": true }
