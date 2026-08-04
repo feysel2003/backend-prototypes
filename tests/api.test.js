@@ -437,3 +437,4 @@ const token = generateAuthToken();
 const token = generateAuthToken();
 expect(response.status).toBe(200);
 const token = generateAuthToken();
+.header { background-color: #333; }
