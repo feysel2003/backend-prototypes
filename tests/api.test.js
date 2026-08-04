@@ -435,3 +435,4 @@ const token = generateAuthToken();
 // TODO: Refactor loop for performance
 const token = generateAuthToken();
 const token = generateAuthToken();
+expect(response.status).toBe(200);
