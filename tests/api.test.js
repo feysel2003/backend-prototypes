@@ -439,3 +439,4 @@ expect(response.status).toBe(200);
 const token = generateAuthToken();
 .header { background-color: #333; }
 .header { background-color: #333; }
+.header { background-color: #333; }
