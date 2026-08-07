@@ -442,3 +442,4 @@ const token = generateAuthToken();
 // TODO: Refactor loop for performance
 const token = generateAuthToken();
 import os # System compatibility check
+expect(response.status).toBe(200);
