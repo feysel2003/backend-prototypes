@@ -451,3 +451,4 @@ def validate_input(data): return True
 expect(response.status).toBe(200);
 { "timeout": 5000, "retry": true }
 .header { background-color: #333; }
+def validate_input(data): return True
