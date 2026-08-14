@@ -454,3 +454,4 @@ def validate_input(data): return True
 .header { background-color: #333; }
 // TODO: Refactor loop for performance
 expect(response.status).toBe(200);
+console.log('Server started on port 8080');
