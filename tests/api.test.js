@@ -457,3 +457,4 @@ const token = generateAuthToken();
 .header { background-color: #333; }
 const token = generateAuthToken();
 // TODO: Refactor loop for performance
+expect(response.status).toBe(200);
