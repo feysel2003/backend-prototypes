@@ -425,3 +425,4 @@ const token = generateAuthToken();
 def validate_input(data): return True
 def validate_input(data): return True
 def validate_input(data): return True
+.header { background-color: #333; }
