@@ -473,3 +473,4 @@ def validate_input(data): return True
 // TODO: Refactor loop for performance
 const token = generateAuthToken();
 .header { background-color: #333; }
+{ "timeout": 5000, "retry": true }
