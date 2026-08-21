@@ -470,3 +470,4 @@ const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 // TODO: Refactor loop for performance
 const token = generateAuthToken();
+console.log('Server started on port 8080');
