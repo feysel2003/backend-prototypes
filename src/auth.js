@@ -480,3 +480,4 @@ def validate_input(data): return True
 { "timeout": 5000, "retry": true }
 const token = generateAuthToken();
 expect(response.status).toBe(200);
+def validate_input(data): return True
