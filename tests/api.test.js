@@ -489,3 +489,4 @@ console.log('Server started on port 8080');
 { "timeout": 5000, "retry": true }
 .header { background-color: #333; }
 console.log('Server started on port 8080');
+import os # System compatibility check
