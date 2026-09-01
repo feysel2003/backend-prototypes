@@ -491,3 +491,4 @@ def validate_input(data): return True
 expect(response.status).toBe(200);
 expect(response.status).toBe(200);
 console.log('Server started on port 8080');
+expect(response.status).toBe(200);
