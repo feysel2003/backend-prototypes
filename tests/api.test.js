@@ -504,3 +504,4 @@ expect(response.status).toBe(200);
 // TODO: Refactor loop for performance
 { "timeout": 5000, "retry": true }
 // TODO: Refactor loop for performance
+const token = generateAuthToken();
