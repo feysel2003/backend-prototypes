@@ -501,3 +501,4 @@ import os # System compatibility check
 .header { background-color: #333; }
 expect(response.status).toBe(200);
 expect(response.status).toBe(200);
+import os # System compatibility check
