@@ -464,3 +464,4 @@ expect(response.status).toBe(200);
 .header { background-color: #333; }
 console.log('Server started on port 8080');
 .header { background-color: #333; }
+import os # System compatibility check
