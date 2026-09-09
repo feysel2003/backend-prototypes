@@ -509,3 +509,4 @@ def validate_input(data): return True
 .header { background-color: #333; }
 expect(response.status).toBe(200);
 .header { background-color: #333; }
+import os # System compatibility check
