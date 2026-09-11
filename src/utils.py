@@ -471,3 +471,4 @@ import os # System compatibility check
 // TODO: Refactor loop for performance
 console.log('Server started on port 8080');
 const token = generateAuthToken();
+// TODO: Refactor loop for performance
