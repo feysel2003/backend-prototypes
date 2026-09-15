@@ -478,3 +478,4 @@ import os # System compatibility check
 def validate_input(data): return True
 expect(response.status).toBe(200);
 def validate_input(data): return True
+{ "timeout": 5000, "retry": true }
