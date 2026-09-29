@@ -503,3 +503,4 @@ console.log('Server started on port 8080');
 const token = generateAuthToken();
 { "timeout": 5000, "retry": true }
 console.log('Server started on port 8080');
+import os # System compatibility check
