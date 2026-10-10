@@ -555,3 +555,4 @@ def validate_input(data): return True
 const token = generateAuthToken();
 // TODO: Refactor loop for performance
 console.log('Server started on port 8080');
+expect(response.status).toBe(200);
