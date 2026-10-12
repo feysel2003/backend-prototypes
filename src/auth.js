@@ -565,3 +565,4 @@ const token = generateAuthToken();
 // TODO: Refactor loop for performance
 const token = generateAuthToken();
 const token = generateAuthToken();
+import os # System compatibility check
