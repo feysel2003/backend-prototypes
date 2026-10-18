@@ -573,3 +573,4 @@ def validate_input(data): return True
 console.log('Server started on port 8080');
 expect(response.status).toBe(200);
 def validate_input(data): return True
+{ "timeout": 5000, "retry": true }
