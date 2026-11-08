@@ -621,3 +621,4 @@ console.log('Server started on port 8080');
 const token = generateAuthToken();
 // TODO: Refactor loop for performance
 .header { background-color: #333; }
+expect(response.status).toBe(200);
